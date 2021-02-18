@@ -36,7 +36,44 @@ namespace Operators
             //pre decrement
             Console.WriteLine("num is {0}", --num);
 
+            int result;
+            result = num1 + num2;
+            Console.WriteLine("Result of num1 + num2 = {0}",result);
 
+            result = num1 - num2;
+            Console.WriteLine("Result of num1 - num2 = {0}", result);
+
+            result = num1 * num2;
+            Console.WriteLine("Result of num1 * num2 = {0}", result);
+
+            result = num1 / num2;
+            Console.WriteLine("Result of num1 / num2 = {0}", result);
+
+            result = num1 % num2;
+            Console.WriteLine("Result of num1 % num2 = {0}", result);
+
+            //relational and type operators
+            bool isLower;
+            isLower = num1 < num2;
+            Console.WriteLine("result of num1 < num2 is {0}", isLower);
+            isLower = num1 > num2;
+            Console.WriteLine("result of num1 < num2 is {0}", isLower);
+
+            //equality operator
+            bool isEqual;
+            isEqual = num1 == num2;
+            Console.WriteLine("result of num1 == num2 is {0}", isEqual);
+
+            isEqual = num1 != num2;
+            Console.WriteLine("result of num1 != num2 is {0}", isEqual);
+
+            //coniditional operators
+            bool isLowerAndSunny;
+            isLowerAndSunny = isLower && isSunny;
+            Console.WriteLine("result isLower and isSunny is {0}", isLowerAndSunny);
+
+            isLowerAndSunny = isLower || isSunny;
+            Console.WriteLine("result isLower or isSunny is {0}", isLowerAndSunny);
         }
     }
 }
